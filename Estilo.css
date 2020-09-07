@@ -1,0 +1,606 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+
+.c1{
+    position: relative;
+    width: 100%;
+    height: 664px;  
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image:url(Fondo1.jpg); /*EN CCS LA IMAGEN SE ADAPTA MEJOR*/    
+}
+
+
+.C2{
+    width: 50%;
+    height: 404px;
+    background-color: #d03b40;
+    float: left;
+}
+
+.C3{
+    width: 50%;
+    height: 404px;
+    background-color: #ded6c0;
+    float: right;
+}
+
+
+.c4{
+    width: 100%;
+    height: 664px;  
+    position: relative;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image:url(Fondo2.jpg); /*EN CCS LA IMAGEN SE ADAPTA MEJOR*/    
+    float: left;
+}
+
+
+.C5{
+    width: 100%;
+    
+    background-color: #f5f0ed;
+    float: left;
+}
+
+.C6{
+    width: 50%;
+    height: 404px;
+    background-color: #d03b40;
+    float: left;
+}
+
+.C7{
+    width: 50%;
+    height: 404px;
+    background-color: #ded6c0;
+    float: right;
+}
+
+
+.C8{
+    height: 170px;
+    background-color: #241d1b;
+    float: left;
+    width: 100%;
+}
+
+.Logo{
+position: absolute;
+left: 30px;
+top: 20px;    
+
+}
+
+
+
+/*LIsta de menú*/
+ul{
+  
+  list-style: none; /*quitando puntitos del listado*/
+ 
+
+}
+
+
+
+/*Dando estilo a LISTA MENÚ: INICIO, SERVICIO,PRODUCTO,ETC*/
+.navegacion a{
+  display: block; /*muestra en bloque con líneas*/
+  text-decoration: none; /*quita el subrayado*/
+  color: #9c9c9c ; /*dando color a lista menú*/
+  border-bottom: 1px solid #2D211F; /*estilo de las ralla largas y color*/ 
+  right:20px;  
+}
+
+
+
+/*Dando estilo al MENÚ con BORDE MARRÓN*/
+.lanzador-menu{
+  text-decoration: none; /*quita el subrayado*/
+  color: #FFF; /*dando color al texto MENÚ*/
+  padding: 6px 10px; /*gruesor de caja lateral y lados*/
+  background-color: #2D211F; /*color de caja de texto*/
+  border-radius: 3px; /*Dando bordes  a las esquinas*/
+  position: relative;
+  left: 200px;
+  top: 40px;    
+}
+
+
+
+/*Si el tamaño de pagina llega a 600 surgiran cambios*/
+@media screen and (min-width: 850px) {
+
+        /*oculta el MENÚ con ESILO cuando llega a 850px*/
+  .lanzador-menu{
+    display: none;
+  }
+
+/*SUBE EL MENÚ DE NAVEGACIÓN. POSICIÓN DE MENÚ*/     
+ .navegacion{
+    position: absolute;
+    top: 41px;
+    right: 100px;
+     font-size: 25px;
+}   
+   
+     /*PONE EL MENÚ EN LISTA HORIZONTAL. DANDO CARACTERISTICA A LA CAJA*/
+  .navegacion li{
+    display: inline-block;
+    margin-right: 15px;
+ 
+    
+  }
+}   
+
+
+
+/*JAVA SCRIPT*/
+@media screen and (max-width: 851px) {
+
+/*Caja del menú, o sea, inicio, servicio, producto, etc*/    
+  .js .navegacion{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
+    position: absolute;
+    top: 67px; /*posición de arriba pero del menú*/
+    left: 30px; /*tamaño de caja izquierda*/
+    right: 30px; /*tamaño de caja derecha*/
+    background-color: #2D211F; /*color de caja*/
+  }
+
+    /*Caja del menú, pero interno*/
+  .js .navegacion a{
+    padding: 5px 10px;
+    color: #FFF;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+    /*Tamaño pero del menú. Desplazando para abajo*/
+  .js .navegacion.menu-desplegado{
+    max-height: 200px;
+  }
+            
+}
+
+
+
+
+
+
+
+
+
+
+
+.texto1{
+color: azure;
+position: relative;
+    top: 35%;    
+    font-size: 40;
+}
+.texto2{
+    color: azure;
+    top: 38%;
+    position: relative;
+}
+
+
+
+
+.texto3{
+color: #ded6c0;
+position: relative;
+    top: 35%;    
+    font-size: 20;
+    text-align: center;
+}
+.texto4{
+    color: #ded6c0;
+     position: relative;
+    top: 38%;
+    text-align: center;
+}
+
+
+
+
+.texto5{
+color: #d03b40;
+position: relative;
+    top: 35%;    
+    font-size: 20;
+    text-align: center;
+}
+.texto6{
+    color: #d03b40;
+     position: relative;
+    top: 38%;
+    text-align: center;
+}
+
+
+
+.texto7{
+color: azure;
+position: relative;
+    top: 35%;    
+    font-size: 40;
+}
+.texto8{
+    color: azure;
+    top: 38%;
+    position: relative;
+}
+
+.texto9{
+color: azure;
+position: relative;
+top: 50%;    
+font-size: 20;
+    
+border: white solid; 
+padding: 2px;
+  
+
+margin-left: 35%;    
+margin-right: 35%
+}
+
+
+
+.texto10{
+color: #ded6c0;
+position: relative;
+    top: 35%;    
+    font-size: 20;
+    text-align: center;
+}
+.texto11{
+    color: #ded6c0;
+     position: relative;
+    top: 38%;
+    text-align: center;
+}
+
+
+
+
+.texto12{
+color: #d03b40;
+position: relative;
+    top: 35%;    
+    font-size: 20;
+    text-align: center;
+}
+.texto13{
+    color: #d03b40;
+     position: relative;
+    top: 38%;
+    text-align: center;
+}
+
+
+.texto14{
+color: #ded6c0;
+position: relative;
+    top: 35%;    
+    font-size: 20;
+    padding-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.imagen1{
+    position: relative;
+    width: 50%;
+   float: left;
+}
+.imagen1 img{
+    position: relative;
+    top: 30px;
+    left: 220px;
+}
+.imagen1 h1{
+    position: relative;
+ left: 489px;
+    bottom: 120px;
+}
+.imagen1 p{
+  position: relative;
+    left: 489px;
+    bottom: 100px;
+    line-height: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+.imagen2{
+    position: relative;
+    width: 50%;
+   float: right;
+}
+
+.imagen2 img{
+    position: relative;
+    top: 30px;
+    left: 250px;
+}
+.imagen2 h1{
+    position: relative;
+ left: 530px;
+    bottom: 120px;
+}
+.imagen2 p{
+  position: relative;
+    left: 530px;
+    bottom: 100px;
+    line-height: 16px;
+}
+
+
+
+
+.imagen3{
+    position: relative;
+    width: 50%;
+   float: left;
+}
+.imagen3 img{
+    position: relative;
+    top: 30px;
+    left: 220px;
+}
+.imagen3 h1{
+    position: relative;
+ left: 489px;
+    bottom: 120px;
+}
+.imagen3 p{
+  position: relative;
+    left: 489px;
+    bottom: 100px;
+    line-height: 16px;
+}
+
+
+
+
+.imagen4{
+    position: relative;
+    width: 50%;
+   float: right;
+}
+.imagen4 img{
+    position: relative;
+    top: 30px;
+    left: 250px;
+}
+.imagen4 h1{
+    position: relative;
+ left: 530px;
+    bottom: 120px;
+}
+.imagen4 p{
+  position: relative;
+    left: 530px;
+    bottom: 100px;
+    line-height: 16px;
+}
+
+
+@media screen and (max-width:1200px){
+     
+    .imagen1,
+    .imagen2,
+    .imagen3,
+    .imagen4
+    {
+        position: relative;
+        right: 20px;
+        
+    }
+
+
+
+
+
+@media screen and (max-width:800px){
+    .texto9
+    {
+    border:white solid;
+    width: 100%;
+    right: 35%;        
+    }
+    
+    
+    .imagen1,
+    .imagen2,
+    .imagen3,
+    .imagen4,
+    .c2,
+    .c3,
+    .c6,
+    .c7
+   
+    {
+        width: 100%;
+        
+    }
+    
+    
+    
+ @media screen and (max-width:801px){
+  
+     .c5{
+         width: 100%;
+         height: 1430px;
+     }
+    
+     
+     .imagen1 img{
+         left: 180px;
+     }
+ 
+     .imagen1 h1{
+         left: 190px;
+         top: 60px;
+     }
+     
+     .imagen1 p{
+         left: 110px;
+     top: 80px;
+     }
+     
+     
+     
+     .imagen2 img{
+         left: 180px;
+         top: 110px;
+     }
+ 
+     .imagen2 h1{
+         left: 190px;
+         top: 125px;
+     }
+     
+     .imagen2 p{
+         left: 110px;
+     top: 140px;
+     }
+     
+     
+     
+     .imagen3 img{
+         left: 180px;
+         top: 157px;
+     }
+ 
+     .imagen3 h1{
+         left: 190px;
+         top: 175px;
+     }
+     
+     .imagen3 p{
+         left: 110px;
+     top: 205px;
+     }
+     
+     
+     
+       .imagen4 img{
+         left: 180px;
+         top: 230px;
+     }
+     .imagen4 h1{
+         left: 190px;
+         top: 257px;
+     }
+     
+     .imagen4 p{
+         left: 110px;
+     top: 275px;
+     }
+    
+     
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
